@@ -151,4 +151,17 @@ h1 {
   width: 50%;
   margin: 1%;
 }
+
+@media only screen and (max-width: 1000px) {
+  .progress-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .el-card {
+    width: 100%;
+    margin: 1%;
+  }
+}
 </style>

@@ -52,12 +52,19 @@
       </el-row>
 
       <el-row class="resume-button">
-        <el-button
-          class="resume"
-          onClick="window.open('https://drive.google.com/file/d/1sUsupiFAqWw5bTl8UzntpPzGMNOj7xLy/view?usp=drivesdk',  '_blank')"
+        <el-tooltip
+          class="item"
+          effect="dark"
+          content="DOWNLOAD RESUME"
+          placement="bottom"
         >
-          <i class="fas fa-download fa-5x"></i>
-        </el-button>
+          <el-button
+            class="resume"
+            onClick="window.open('https://drive.google.com/file/d/1sUsupiFAqWw5bTl8UzntpPzGMNOj7xLy/view?usp=drivesdk',  '_blank')"
+          >
+            <i class="fas fa-download fa-5x"></i>
+          </el-button>
+        </el-tooltip>
       </el-row>
     </el-card>
   </div>
@@ -105,6 +112,6 @@ h4 {
 }
 
 .el-card {
-  margin: 3%;
+  margin: 2%;
 }
 </style>

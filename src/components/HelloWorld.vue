@@ -51,7 +51,7 @@ export default {
   display: flex;
   justify-content: center;
   font-size: larger;
-
+  flex-wrap: wrap;
   .el-menu-item {
     font-size: larger;
     color: $primary-grey;
@@ -61,6 +61,8 @@ export default {
     text-decoration: none;
     :hover {
       background: #dcdfe6;
+      border-left: solid 1px#dcdfe6;
+      border-right: solid 1px#dcdfe6;
     }
   }
 }

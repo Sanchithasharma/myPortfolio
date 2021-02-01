@@ -18,6 +18,6 @@ export default {
 
 <style>
 #app {
-  font-family: "Poppins";
+  font-family: "Garamond";
 }
 </style>

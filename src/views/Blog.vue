@@ -3,32 +3,43 @@
     <div>
       <div>
         <div
+          v-loading="loading"
+          element-loading-text="Loading..."
+          element-loading-spinner="el-icon-loading"
+          element-loading-background="rgba(0, 0, 0, 0.8)"
           v-for="user in myBlogs"
           class="blog-card"
           :key="myBlogs.indexOf(user)"
         >
-          <el-card>
+          <el-card shadow="always" class="box-card">
             <div class="published-date">
               {{ new Date(user.pubDate).toDateString() }}
             </div>
+            <div class="blog-area">
+              <h1>
+                <a :href="user.link" target="_blank">{{ user.title }}</a>
+              </h1>
+              <el-image width="100px" :src="user.thumbnail"></el-image>
 
-            <h1>{{ user.title }}</h1>
-            <img :src="user.image" />
-            <div>
-              {{ user.description.substring(0, 1000) }}
-              <h3 class="read-more">
-                <a :href="user.link" target="_blank">..Read more</a>
-              </h3>
+              <div class="blog-description">
+                {{ htmlToText(user.content.substring(0, 300)) }}
+                <span class="read-more">
+                  <a :href="user.link" target="_blank">...Read more</a>
+                </span>
+              </div>
             </div>
             <div class="blog-categories">
-              <div
+              <el-row
+                :gutter="20"
                 v-for="category in user.categories"
                 :key="user.categories.indexOf(category)"
               >
-                <el-tag class="tag" effect="dark" color="#303133">{{
-                  category.toUpperCase()
-                }}</el-tag>
-              </div>
+                <el-col :span="6">
+                  <el-tag class="tag" effect="dark" color="#303133">{{
+                    category.toUpperCase()
+                  }}</el-tag>
+                </el-col>
+              </el-row>
             </div>
           </el-card>
         </div>
@@ -39,12 +50,15 @@
 
 <script>
 import axios from "axios";
+const { htmlToText } = require("html-to-text");
+
 export default {
   name: "Blog",
   data() {
     return {
       myBlogs: [],
       tagColor: "#303133",
+      loading: true,
     };
   },
 
@@ -60,25 +74,39 @@ export default {
         .then((response) => {
           // JSON responses are automatically parsed.
           this.myBlogs = this.filterMyBlogs(response.data.items);
+          this.loading = false;
+
           console.log(this.myBlogs);
           console.log(this.myBlogs.items);
         })
         .catch((e) => {
           this.errors.push(e);
+          this.loading = false;
         });
     },
     filterMyBlogs(blogs) {
       return blogs.filter((blog) => blog.categories.length !== 0);
+    },
+    htmlToText(html) {
+      const text = htmlToText(html, {
+        wordwrap: 130,
+      });
+      return text;
     },
   },
 };
 </script>
 <style scoped lang="scss">
 .blog-card {
-  margin: 3%;
+  margin-top: 2%;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
 }
 el-card {
-  padding: 7%;
+  padding: 70%;
   margin: 6%;
 }
 .published-date {
@@ -90,13 +118,50 @@ el-card {
   display: flex;
   flex-direction: row;
   margin: 3% 3% 3% 0;
+  justify-content: center;
+  flex-wrap: wrap;
   .tag {
-    margin-right: 25px;
+    margin-right: 20px;
+    margin-top: 2px;
   }
+}
+
+.blog-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0% 7% 0 7%;
+}
+
+.blog-description {
+  font-size: 22px;
+  margin-top: 4%;
+  font-weight: 200;
 }
 
 .read-more {
   cursor: pointer;
+  font-size: 23px;
+  font-weight: bold;
+}
+h1 {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.img {
+  width: 50rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .blog-card {
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 2%;
+  }
 }
 </style>
 
