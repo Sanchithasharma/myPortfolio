@@ -1,36 +1,20 @@
 [
     {
-        "title": "Document Extractor",
+        "title": "Data Reduction Estimator WebApp",
         "image": "http://dummyimage.com/152x188.bmp/ff4444/ffffff",
-        "description": "The document extractor extracts ",
-        "usedStack": [
-            {},
-            {},
-            {},
-            {}
-        ]
+        "description": "Data Reduction Estimator",
+        "usedStack": ["Angular","Node.js","Express","Angular Material"]
     },
     {
-        "title": "Ms",
+        "title": "IOPS Calculation WebApp",
         "image": "http://dummyimage.com/245x225.png/ff4444/ffffff",
-        "description": "Pellington",
-        "usedStack": [
-            {},
-            {},
-            {},
-            {}
-        ]
+        "description": "IOPS Calculator WebApp",
+        "usedStack": ["Angular", "Node.js", "Express", "Angular Material"]
     },
     {
-        "title": "Dr",
+        "title": "Back Office Panel",
         "image": "http://dummyimage.com/127x142.jpg/cc0000/ffffff",
         "description": "Norville",
-        "usedStack": [
-            {},
-            {},
-            {},
-            {},
-            {}
-        ]
+        "usedStack": ["Vue","Vue Store","Element UI"]       
     }
 ]

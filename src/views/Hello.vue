@@ -159,7 +159,4 @@ export default {
     margin-top: 2%;
   }
 }
-
-.el-avatar {
-}
 </style>

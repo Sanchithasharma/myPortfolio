@@ -22,9 +22,9 @@
         <el-menu-item index="1">Contact</el-menu-item>
       </router-link>
 
-      <router-link to="/miscellaneous">
+      <!-- <router-link to="/miscellaneous">
         <el-menu-item index="1">Miscellaneous</el-menu-item>
-      </router-link>
+      </router-link> -->
     </el-menu>
   </div>
 </template>
