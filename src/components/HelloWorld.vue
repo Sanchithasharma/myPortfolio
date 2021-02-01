@@ -26,66 +26,6 @@
         <el-menu-item index="1">Miscellaneous</el-menu-item>
       </router-link>
     </el-menu>
-
-    <div class="animationIcons">
-      <img
-        class="diamond-icon"
-        src="../assets/animationIcons/diamond.png"
-        height="40px"
-        width="40px"
-      />
-
-      <img
-        class="frame-icon"
-        src="../assets/animationIcons/frame.png"
-        height="40px"
-        width="40px"
-      />
-
-      <img
-        class="music-icon"
-        src="../assets/animationIcons/music.png"
-        height="40px"
-        width="40px"
-      />
-
-      <img
-        class="download-icon"
-        src="../assets/animationIcons/download.png"
-        height="40px"
-        width="40px"
-      />
-    </div>
-
-    <div class="animationIcons-right">
-      <img
-        class="diamond-icon"
-        src="../assets/animationIcons/diamond.png"
-        height="40px"
-        width="40px"
-      />
-
-      <img
-        class="frame-icon"
-        src="../assets/animationIcons/frame.png"
-        height="40px"
-        width="40px"
-      />
-
-      <img
-        class="music-icon"
-        src="../assets/animationIcons/music.png"
-        height="40px"
-        width="40px"
-      />
-
-      <img
-        class="download-icon"
-        src="../assets/animationIcons/download.png"
-        height="40px"
-        width="40px"
-      />
-    </div>
   </div>
 </template>
 
