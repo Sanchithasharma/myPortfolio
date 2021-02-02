@@ -15,12 +15,20 @@
           :percentage="85"
         ></el-progress>
 
-        <h3>HTML</h3>
+        <h3>HTML 5</h3>
         <el-progress
           :stroke-width="progressBarCardWidth"
           :color="customColor"
           :show-text="false"
-          :percentage="37"
+          :percentage="40"
+        ></el-progress>
+
+        <h3>CSS 3</h3>
+        <el-progress
+          :stroke-width="progressBarCardWidth"
+          :color="customColor"
+          :show-text="false"
+          :percentage="45"
         ></el-progress>
 
         <h3>Angular</h3>
@@ -56,6 +64,14 @@
         ></el-progress>
 
         <h3>Mongo DB</h3>
+        <el-progress
+          :stroke-width="progressBarCardWidth"
+          :color="customColor"
+          :show-text="false"
+          :percentage="30"
+        ></el-progress>
+
+        <h3>GIT</h3>
         <el-progress
           :stroke-width="progressBarCardWidth"
           :color="customColor"

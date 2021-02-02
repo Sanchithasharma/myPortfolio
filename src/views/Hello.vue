@@ -13,7 +13,7 @@
       <center>
         Hello! <br />
         I'm a Web Developer specialized in developing <br />
-        responsive websites and web applications with 4+ years experience.
+        responsive websites and web applications. I have 4+ years of experience.
       </center>
     </div>
 
