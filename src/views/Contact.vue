@@ -33,17 +33,17 @@
         <!-- E-mail -->
         <el-button
           class="icon-buttons"
-          onClick="window.open('https://www.linkedin.com/in/sanchitha-sharma-r/',  '_blank')"
+          onClick="window.open('mailto: sanchitha.s.r@gmail.com',  '_blank')"
           type="info"
           circle
         >
-          <i class="fab fa-telegram-plane fa-2x"></i>
+          <i class="fas fa-envelope fa-2x"></i>
         </el-button>
 
         <!-- Twitter -->
         <el-button
           class="icon-buttons"
-          onClick="window.open('https://www.linkedin.com/in/sanchitha-sharma-r/',  '_blank')"
+          onClick="window.open('https://twitter.com/SrSanchitha',  '_blank')"
           type="info"
           circle
         >
@@ -60,7 +60,7 @@
         >
           <el-button
             class="resume"
-            onClick="window.open('https://drive.google.com/file/d/1sUsupiFAqWw5bTl8UzntpPzGMNOj7xLy/view?usp=drivesdk',  '_blank')"
+            onClick="window.open('https://drive.google.com/file/d/1F2Re4qY65GNjR_cez4lyQxeUUvcrZOdk/view?usp=drivesdk',  '_blank')"
           >
             <i class="fas fa-download fa-5x"></i>
           </el-button>
