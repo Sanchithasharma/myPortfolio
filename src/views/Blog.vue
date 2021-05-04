@@ -22,7 +22,7 @@
               <el-image width="100px" :src="user.thumbnail"></el-image>
 
               <div class="blog-description">
-                {{ htmlToText(user.content.substring(0, 300)) }}
+                {{ htmlToText(user.content.substring(0, 200)) }}
                 <span class="read-more">
                   <a :href="user.link" target="_blank">...Read more</a>
                 </span>
@@ -58,7 +58,7 @@ export default {
     return {
       myBlogs: [],
       tagColor: "#303133",
-      loading: true,
+      loading: false,
     };
   },
 
@@ -67,6 +67,7 @@ export default {
   },
   methods: {
     getMyBlogsFromMedium() {
+    this.loading = true;
       axios
         .get(
           `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sanchithasr`
