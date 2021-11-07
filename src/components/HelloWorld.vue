@@ -22,6 +22,10 @@
         <el-menu-item index="1">Contact</el-menu-item>
       </router-link>
 
+      <router-link to="/resume">
+        <el-menu-item index="1">Resume</el-menu-item>
+      </router-link>
+
       <!-- <router-link to="/miscellaneous">
         <el-menu-item index="1">Miscellaneous</el-menu-item>
       </router-link> -->
