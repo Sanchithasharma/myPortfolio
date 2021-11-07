@@ -1,11 +1,28 @@
 <template>
-	<div class="resume">
+    <div class="resume">
         <div>
             <span id="my-name">SANCHITHA SR</span><br/>
             <span id="contact-info">Bengaluru | +91-9620995773 | sanchitha.s.r@gmail.com | <a target="_blank" href="https://www.linkedin.com/in/sanchitha-sharma-r/">  LinkedIn </a> </span>
         </div>
 
-<div class="menu">
+
+        <h3>EDUCATION:</h3>
+        <el-divider></el-divider>
+        <div id="college-details">
+            <span>Jawaharlal Nehru College of Engineering</span>  
+            <span class="place">Shimoga, KA</span>
+        </div>  
+        <div id="course-details">
+            <span>
+                Bachelor of Engineering in 
+        Electronics and Communication 
+            </span>
+            <span>
+                June-2012
+            </span>
+            
+        </div>
+
         <h3>WORK EXPERIENCE:</h3>
         <el-divider></el-divider>
         <span class="company-details"><span>
@@ -95,27 +112,24 @@ web application called Data Reduction Estimator for a Storage company (DELL Emc)
             Built/ Implemented reusable code and libraries for future use using Node.js and Express.js.
           </li>
         </ul>
-</div>
 
-<div class="main">
-        <h3>EDUCATION:</h3>
+
+        <h3>OTHER PROJECTS:</h3>
         <el-divider></el-divider>
-        <div id="college-details">
-            <span>Jawaharlal Nehru College of Engineering</span>  
-            <span class="place">Shimoga, KA</span>
-        </div>  
-        <div id="course-details">
-            <span>
-                Bachelor of Engineering in 
-        Electronics and Communication 
-            </span>
-            <span>
-                June-2012
-            </span>
-            
-        </div>
 
-       <h3>SKILLS & INTERESTS</h3>
+        <ul>
+            <li>
+                <b>Blogging on Medium and DEV:</b> Written over 20 blogs on JavaScript, Vue.js and web development that garnered over 5k views on average. 
+            </li>
+            <li>
+                <b>Personal Website: </b>https://sanchitha-sr.netlify.app
+            </li>
+            <li>
+                <b>Auto-filling exam forms:</b> A web application that accepts .doc file as input, parses it and auto-fills the form with the details from the document. The application is developed using MEAN stack technologies.
+            </li>
+        </ul>
+
+        <h3>SKILLS & INTERESTS</h3>
         <el-divider></el-divider>
 
         <div id="skills-grid">
@@ -133,38 +147,26 @@ web application called Data Reduction Estimator for a Storage company (DELL Emc)
           </div>
         </div>
 
-        <h3>OTHER PROJECTS:</h3>
-        <el-divider></el-divider>
+        
 
-        <ul>
-            <li>
-                <b>Blogging on Medium and DEV:</b> Written over 20 blogs on JavaScript, Vue.js and web development that garnered over 5k views on average. 
-            </li>
-            <li>
-                <b>Personal Website: </b>https://sanchitha-sr.netlify.app
-            </li>
-            <li>
-                <b>Auto-filling exam forms:</b> A web application that accepts .doc file as input, parses it and auto-fills the form with the details from the document. The application is developed using MEAN stack technologies.
-            </li>
-        </ul>
-</div>
+        <h3>Interests:</h3> Reading fiction, Cooking, Music, Blogging, Hiking
 
-	</div>
+
+
+    </div>
 </template>
+
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-	
+    
 })
 </script>
-<style scoped>
-* {
-  box-sizing: border-box;
-}
 
+<style scoped>
 .resume {
     font-family: 'Times New Roman', Times, serif;
-    margin: 10px 50px;
+    margin: 10px 100px;
     
 }
 #my-name {
@@ -177,7 +179,6 @@ export default Vue.extend({
     justify-content: center;
     font-size: larger;
 }
-
 #college-details, #course-details, .company-details, .role-details {
     display: flex;
     justify-content: space-between;
@@ -201,18 +202,4 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
 } */
-
-.menu {
-  width: 70%;
-  float: left;
-  padding: 15px;
-  border: 1px solid red;
-}
-
-.main {
-  width: 30%;
-  float: left;
-  padding: 15px;
-  border: 1px solid red;
-}
 </style>
