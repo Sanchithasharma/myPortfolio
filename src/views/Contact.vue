@@ -60,7 +60,7 @@
         >
           <el-button
             class="resume"
-            onClick="window.open('https://drive.google.com/file/d/1Y--3XO6qJxSYrkd1q5q3CmJ_g0r5zS93/view?usp=sharing',  '_blank')"
+            onClick="window.open('https://drive.google.com/file/d/1XzylccRsgshk3PHq91UPjcPQvoFL2Kbi/view?usp=sharing',  '_blank')"
           >
             <i class="fas fa-download fa-5x"></i>
           </el-button>
