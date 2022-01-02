@@ -77,7 +77,7 @@
       <!-- <el-row class="resume-button">
         <el-button
           class="resume"
-          onClick="window.open('https://drive.google.com/file/d/1sUsupiFAqWw5bTl8UzntpPzGMNOj7xLy/view?usp=drivesdk',  '_blank')"
+          onClick="window.open('https://drive.google.com/file/d/1KQwwMY-TJYHjCHJT3FxwuaB4JajyfoLG/view?usp=sharing,  '_blank')"
         >
           <i class="fas fa-download fa-3x"></i>
         </el-button>
