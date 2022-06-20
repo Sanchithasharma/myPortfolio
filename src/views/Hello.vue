@@ -2,7 +2,7 @@
   <div class="intro">
     <div class="intro-avatar">
       <el-avatar
-        onClick="window.open('https://drive.google.com/file/d/1XzylccRsgshk3PHq91UPjcPQvoFL2Kbi/view?usp=sharing',  '_blank')"
+        onClick="window.open('https://drive.google.com/file/d/19oC0yJ4BRGR8YsJVNy4w1hA_H88pYPLB/view?usp=sharing',  '_blank')"
         :size="150"
       >
         <img src="../assets/profile.jpg" />
