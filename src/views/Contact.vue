@@ -16,7 +16,7 @@
             >sanchitha.s.r@gmail.com
           </span>
           <br />
-          LIVES IN: <span style="color: #e6a23c">Bengaluru, INDIA </span>
+          LIVES IN: <span style="color: #e6a23c">Adelaide, SA, Australia </span>
         </center>
       </h4>
       <el-row class="intro-icon-rows">
