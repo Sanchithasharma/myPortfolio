@@ -11,16 +11,21 @@
       </router-link>
 
       <router-link to="/skills">
-        <el-menu-item index="1">Work</el-menu-item>
+        <el-menu-item index="1">Skills</el-menu-item>
       </router-link>
 
       <router-link to="/blog">
         <el-menu-item index="1">Blog</el-menu-item>
       </router-link>
 
+      <router-link to="/Experience">
+        <el-menu-item index="1">Experience</el-menu-item>
+      </router-link>
+
       <router-link to="/Contact">
         <el-menu-item index="1">Contact</el-menu-item>
       </router-link>
+
 
       <!-- <router-link to="/miscellaneous">
         <el-menu-item index="1">Miscellaneous</el-menu-item>
