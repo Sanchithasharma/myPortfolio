@@ -7,7 +7,7 @@
       <el-divider></el-divider>
 
       <div class="block">
-        <el-timeline>
+        <!-- <el-timeline>
           <el-timeline-item
             timestamp="June 2022 - Present"
             placement="top"
@@ -17,6 +17,9 @@
             <el-card>
               <h3>Senior Consultant</h3>
               <p>Capgemini, Australia</p>
+              <p>
+                Vue3 . Tailwind CSS . Liquid Template . PCSS . Storybook . React . Material UI . Chromatic . Unit tests . Micro Front-end
+              </p>
             </el-card>
           </el-timeline-item>
 
@@ -57,6 +60,23 @@
               <p>Jawaharlal Nehru College Of Engineering, Shimoga</p>
             </el-card>
           </el-timeline-item>
+        </el-timeline> -->
+
+        <el-timeline v-for="(item, index) in experience" :key="index">
+          <el-timeline-item
+            :timestamp="item.timestamp"
+            placement="top"
+            :color="customColor"
+            icon="el-icon-loading"
+          >
+            <el-card>
+              <h3>{{ item.organization }}</h3>
+              <p>{{ item.role }}</p>
+              <p>
+                {{ item.skills.join(" . ") }}
+              </p>
+            </el-card>
+          </el-timeline-item>
         </el-timeline>
       </div>
     </el-card>
@@ -73,22 +93,27 @@ export default {
         {
             timestamp: "June 2022 - Present",
             organization: "Senior Consultant",
-            role: "Capgemini, Australia"
+            role: "Capgemini, Australia",
+            skills: ["Vue 3", "Tailwind CSS", "Liquid Template", "Storybook", "React", "TypeScript", "HTML", "CSS", "AWS", "BitBucket"]
         },
         {
             timestamp: "June 2020 - June 2022",
             organization: "Robosoft Technologies",
-            role: "Senior Software Engineer"
+            role: "Senior Software Engineer",
+            skills: ["Vue 3", "Element UI", "SCSS", "Storybook", "TypeScript", "HTML", "CSS", "Chromatic", "Jenkins", "Github"]
+
         },
         {
             timestamp: "December 2016 - June 2020",
             organization: "Tata Consultancy Services",
-            role: "System Engineer Trainee"
+            role: "System Engineer Trainee",
+            skills: ["Angular", "Node.js", "Material UI", "TypeScript", "HTML", "CSS"]
         },
         {
             timestamp: "2012 - 2016",
             organization: "Jawaharlal Nehru College Of Engineering, Shimoga",
-            role: "Bachelor Of Engineering in Electronics and Communication"
+            role: "Bachelor Of Engineering in Electronics and Communication",
+            skills: []
         }
       ]
     };

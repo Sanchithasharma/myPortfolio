@@ -10,9 +10,9 @@
         <el-menu-item index="1">Hello</el-menu-item>
       </router-link>
 
-      <router-link to="/skills">
+      <!-- <router-link to="/skills">
         <el-menu-item index="1">Skills</el-menu-item>
-      </router-link>
+      </router-link> -->
 
       <router-link to="/blog">
         <el-menu-item index="1">Blog</el-menu-item>

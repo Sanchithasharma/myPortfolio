@@ -2,13 +2,14 @@
   <div class="intro">
     <div class="intro-avatar">
       <el-avatar
-        onClick="window.open('https://drive.google.com/file/d/19oC0yJ4BRGR8YsJVNy4w1hA_H88pYPLB/view?usp=sharing',  '_blank')"
+      class="avatar"
+        onClick="window.open('https://drive.google.com/file/d/1En3yvaaA2d58ajHZ0tP7tvV_kp0AC7t1/view?usp=sharing',  '_blank')"
         :size="150"
       >
         <img src="../assets/profile.jpg" />
       </el-avatar>
 
-      <center class="my-name">Sanchitha SR</center>
+      <center class="my-name">Sanchitha Sharma Ranganathaiah</center>
 
       <center>
         Hello! <br />
@@ -118,9 +119,11 @@ export default {
     align-items: center;
     margin: 3%;
 
+
     .my-name {
       font-family: "Lovers Quarrel", Helvetica, Arial;
       font-size: 100px;
+      text-shadow: rgba(6,6,38,0.9) 0px 0px 39px;
     }
   }
 
@@ -138,11 +141,13 @@ export default {
 
     .icon-buttons {
       background: #303133;
+      
     }
 
     :hover {
       background: #ebeef5;
       color: black;
+      // box-shadow: rgba(6,6,38,0.9) 0px 0px 39px;
     }
   }
 

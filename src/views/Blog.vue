@@ -24,7 +24,7 @@
               <div class="blog-description">
                 {{ htmlToText(user.content.substring(0, 200)) }}
                 <span class="read-more">
-                  <a :href="user.link" target="_blank">...Read more</a>
+                  <a :href="user.link" target="_blank" class="link">...Read more</a>
                 </span>
               </div>
             </div>
@@ -122,8 +122,14 @@ el-card {
   justify-content: center;
   flex-wrap: wrap;
   .tag {
-    margin-right: 20px;
-    margin-top: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-color: none
+
+  }
+
+  .el-tag--dark {
+    border-color: transparent;
   }
 }
 
@@ -163,6 +169,10 @@ h1 {
     margin-right: 3%;
     margin-bottom: 2%;
   }
+}
+
+.link {
+  color: black;
 }
 </style>
 

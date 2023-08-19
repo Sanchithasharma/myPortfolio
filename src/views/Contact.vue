@@ -16,7 +16,7 @@
             >sanchitha.s.r@gmail.com
           </span>
           <br />
-          LIVES IN: <span style="color: #e6a23c">Adelaide, SA, Australia </span>
+          LIVES IN: <span style="color: #e6a23c">Brisbane, SA, Australia </span>
         </center>
       </h4>
       <el-row class="intro-icon-rows">
@@ -60,7 +60,7 @@
         >
           <el-button
             class="resume"
-            onClick="window.open('https://drive.google.com/file/d/19oC0yJ4BRGR8YsJVNy4w1hA_H88pYPLB/view?usp=sharing',  '_blank')"
+            onClick="window.open('https://drive.google.com/file/d/1En3yvaaA2d58ajHZ0tP7tvV_kp0AC7t1/view?usp=sharing',  '_blank')"
           >
             <i class="fas fa-download fa-5x"></i>
           </el-button>
